@@ -12,6 +12,7 @@ Module.register("MMM-WhisperGPT-Extra", {
 
 	start: function() {
 		var self = this;
+    this.sendSocketNotification("INIT");
 	},
 
 	getDom: function() {

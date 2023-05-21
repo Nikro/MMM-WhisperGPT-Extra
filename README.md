@@ -11,7 +11,7 @@ There are no configs - this module is just a template / inspiration on how one m
 var config = {
     modules: [
         {
-            module: 'MMM-WhisperGPT-Extra'        
+            module: 'MMM-WhisperGPT-Extra'
         }
     ]
 }

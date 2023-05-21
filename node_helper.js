@@ -18,7 +18,10 @@ module.exports = NodeHelper.create({
 	 * argument payload mixed - The payload of the notification.
 	 */
 	socketNotificationReceived: function(notification, payload) {
-		if (notification === "COMMAND") {
+		if (notification === "INIT") {
+			exec('cec-ctl -d /dev/cec0 --playback -S');
+		}
+		else if (notification === "COMMAND") {
 			this.processCommand(payload);
 		}
 		else if (notification === 'KEYWORD_DETECTED') {
